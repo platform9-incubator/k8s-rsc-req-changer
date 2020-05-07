@@ -14,7 +14,7 @@ Batch modification of cpu or memory requests in a cluster
 
 ## Examples
 ```
-k8s_rsc_req_changer foo- cpu 50m # changes the cpu request of all containers named foo-xxx to 50m
+k8s_rsc_req_changer foo- cpu 50m # changes (or adds) the cpu request of all containers named foo-xxx to 50m
 k8s_rsc_req_changer foo- memory 0 # removes the memory request of all containers named foo-xxx if present
 ```
 ## Building the program
