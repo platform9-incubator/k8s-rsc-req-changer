@@ -6,6 +6,7 @@ Batch modification of cpu or memory requests in a cluster
 
 - If the quantity is 0, then the request is removed if present
 - Otherwise, the request is modified (if already present and has diffea rent value) or added (if not present)
+- Ensure KUBECONFIG is set and points to the desired cluster. Otherwise, the `-kubeconfig <path>` option must be supplied.
 
 ## Warnings
 - Use with caution: all containers across all namespaces with a matching name prefix are modified
